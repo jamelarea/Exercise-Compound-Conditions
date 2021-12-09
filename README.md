@@ -1,4 +1,69 @@
-# Exercise-Compound-Conditions
+# Lecture-7-Compound-Conditions
+
+SLIDE 9, Theme Park
+
+    #include <iostream>
+    using namespace std;
+
+    int main()
+    {
+        int height, age; //variables
+        cout << "Enter height: "; cin >> height; //character output and character input
+        cout << "Enter age: "; cin >> age; //character output and character input
+            if ((height > 0.6) && (age > 5)); { //if height is greater than 0.6 and age is greater than 5, they can enter the theme park
+                cout << "Congratulations! you can enter the Theme Park!" << endl;
+        }
+    }
+
+Nested IF Statements
+
+EXERCISES
+
+SLIDE 14, Primitive Quiz
+
+    #include <iostream>
+    using namespace std;
+
+    int main()
+    {
+        string answer; //variable
+        cout << "What is the capital of France? "; //character output
+        cin >> answer; //character input
+
+        if (answer == "Paris" || answer == "paris") //if the answer is Paris or paris, the character output will show that it is correct
+            cout << "\nCongratulations, your answer is correct!";
+
+        else if (answer != "paris" && answer != "Paris") //if the answer is NOT Paris or paris, the character output will show that it is wrong
+            cout << "Sorry, your answer is wrong.";
+        return 0;
+     }
+
+SLIDE 15, Letter Checker
+
+    #include <iostream>
+    using namespace std;
+
+    int main()
+    {
+        char letter; //variable
+
+        cout << "Enter a letter: "; //character output
+        cin >> letter; //character input
+
+        if ((letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') || (letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U')) //vowels
+            {
+                cout << "\nThe entered letter is a vowel." << endl;
+            }
+        else if (!isalpha(letter)) //special characters
+            {
+            cout << "\nYou entered an incorrect value." << endl;
+            }
+        else //other letters besides a, e, i, o, u
+        {
+            cout << "\nYou entered a consonant." << endl;
+        }
+        return 0;
+    }
 
 SLIDE 16, Mark my Words
     
